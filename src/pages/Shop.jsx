@@ -1,7 +1,8 @@
 import React from 'react';
 import TypeBar from "../components/TypeBar";
+import ProductsList from "../components/ProductsList";
 
-const Store = () => {
+const Shop = () => {
     return (
         <div>
             <div className="container-fluid">
@@ -9,11 +10,13 @@ const Store = () => {
                     <div className="col-3">
                         <TypeBar />
                     </div>
-                    <div className="col-9">Items</div>
+                    <div className="col-9">
+                        <ProductsList />
+                    </div>
                 </div>
             </div>
         </div>
     );
 };
 
-export default Store;
+export default Shop;

@@ -10,13 +10,13 @@ export default class DeviceStore {
             {id:5, name:"Sensunyaki"},
         ]
         this._items = [
-            {id:1, name:"Big Big Burger 1", price:888, img:`https://www.mcdonalds.com/content/dam/ua/nutrition/nfl-product/product/regular/Sdwch_Cheeseburger.png`},
-            {id:2, name:"Big Big Burger 1", price:888, img:`https://www.mcdonalds.com/content/dam/ua/nutrition/nfl-product/product/regular/Sdwch_Cheeseburger.png`},
-            {id:3, name:"Big Big Burger 1", price:888, img:`https://www.mcdonalds.com/content/dam/ua/nutrition/nfl-product/product/regular/Sdwch_Cheeseburger.png`},
-            {id:4, name:"Big Big Burger 1", price:888, img:`https://www.mcdonalds.com/content/dam/ua/nutrition/nfl-product/product/regular/Sdwch_Cheeseburger.png`},
-            {id:5, name:"Big Big Burger 1", price:888, img:`https://www.mcdonalds.com/content/dam/ua/nutrition/nfl-product/product/regular/Sdwch_Cheeseburger.png`},
+            {id:1, name:"Big Big Burger 1", price:888, img:`https://nevafood.ru/wp-content/uploads/2017/07/burger-ayam.jpg`},
+            {id:2, name:"Big Big Burger 2", price:888, img:`https://nevafood.ru/wp-content/uploads/2017/07/burger-ayam.jpg`},
+            {id:3, name:"Big Big Burger 3", price:888, img:`https://nevafood.ru/wp-content/uploads/2017/07/burger-ayam.jpg`},
+            {id:4, name:"Big Big Burger 4", price:888, img:`https://nevafood.ru/wp-content/uploads/2017/07/burger-ayam.jpg`},
+            {id:5, name:"Big Big Burger 5", price:888, img:`https://nevafood.ru/wp-content/uploads/2017/07/burger-ayam.jpg`},
         ]
-        this._selectedType = {} //action status
+
         makeAutoObservable(this)
     }
 
@@ -26,17 +26,11 @@ export default class DeviceStore {
     setItems (items) {
         this._items = items;
     }
-    setSelectedType (type) {
-        this._selectedType = type;
-    }
 
     get types() {
         return this._types;
     }
     get items() {
         return this._items
-    }
-    get selectedType() {
-         return this._selectedType //action
     }
 }

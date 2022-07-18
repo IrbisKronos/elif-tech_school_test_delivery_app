@@ -1,6 +1,6 @@
 import './App.css';
 import {Route, BrowserRouter, Routes} from "react-router-dom";
-import Store from "./pages/Store";
+import Shop from "./pages/Shop";
 import Cart from "./pages/Cart";
 import NavBar from "./components/NavBar";
 
@@ -11,7 +11,7 @@ function App() {
             <NavBar />
             <div className="container p-3">
                 <Routes>
-                    <Route path="/" element ={<Store />} />
+                    <Route path="/" element ={<Shop />} />
                     <Route path="/cart/" element={<Cart />} />
                 </Routes>
             </div>
