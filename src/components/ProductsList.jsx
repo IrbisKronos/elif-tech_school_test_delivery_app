@@ -8,7 +8,7 @@ const ProductsList = observer(() => {
 
 
     return (
-        <div className="row mh-100 overflow-scroll " style={{height: "600px"}}>
+        <div className="row mh-100 overflow-scroll " style={{ height: "600px" }}>
             {items.items.map(items =>
                 <ProductCard items={items} />
             )}
