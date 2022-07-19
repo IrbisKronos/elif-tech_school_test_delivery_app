@@ -8,12 +8,14 @@ import NavBar from "./components/NavBar";
 function App() {
     return (
         <BrowserRouter>
-            <NavBar />
-            <div className="container p-3">
-                <Routes>
-                    <Route path="/" element ={<Shop />} />
-                    <Route path="/cart/" element={<Cart />} />
-                </Routes>
+            <div className="vh-100 d-flex flex-column">
+                <NavBar />
+                <div className="p-3" style={{minHeight: 0}}>
+                    <Routes>
+                        <Route path="/" element ={<Shop />} />
+                        <Route path="/cart/" element={<Cart />} />
+                    </Routes>
+                </div>
             </div>
         </BrowserRouter>
     );

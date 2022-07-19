@@ -6,12 +6,13 @@ import ProductCard from "./ProductCard";
 const ProductsList = observer(() => {
     const {items} = useContext(Context)
 
-
     return (
-        <div className="row mh-100 overflow-scroll " style={{ height: "600px" }}>
-            {items.items.map(items =>
-                <ProductCard items={items} />
-            )}
+        <div className="container">
+            <div className="row" style={{    }}>
+                {items.items.map(items =>
+                    <ProductCard items={items} />
+                )}
+            </div>
         </div>
     );
 });
