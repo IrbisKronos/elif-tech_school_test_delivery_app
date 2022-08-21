@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/elif-tech_school_test_delivery_app/static/css/main.c25aa6b5.css",
+    "main.js": "/elif-tech_school_test_delivery_app/static/js/main.3ae08f0a.js",
+    "index.html": "/elif-tech_school_test_delivery_app/index.html",
+    "main.c25aa6b5.css.map": "/elif-tech_school_test_delivery_app/static/css/main.c25aa6b5.css.map",
+    "main.3ae08f0a.js.map": "/elif-tech_school_test_delivery_app/static/js/main.3ae08f0a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c25aa6b5.css",
+    "static/js/main.3ae08f0a.js"
+  ]
+}
